@@ -39,7 +39,7 @@ const account2 = {
     '2020-02-05T16:33:06.386Z',
     '2020-04-10T14:43:26.374Z',
     '2020-06-25T18:49:59.371Z',
-    '2020-07-26T12:01:20.894Z',
+    '2021-06-14T12:01:20.894Z',
   ],
   currency: 'EGP',
   locale: 'ar-EG',
@@ -337,7 +337,7 @@ btnSort.addEventListener('click', function (e) {
 });
 
 function logoutTimer() {
-  let time = 30;
+  let time = 300;
   const logout = function () {
     const min = String(Math.trunc(time / 60)).padStart(2, '0');
     const sec = String(time % 60).padStart(2, '0');
