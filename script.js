@@ -299,6 +299,7 @@ btnClose.addEventListener('click', function (e) {
     );
     accounts.splice(index, 1);
     document.body.style.backgroundColor = 'red';
+    labelWelcome.textContent = 'Log in to get started';
 
     setTimeout(() => (document.body.style.backgroundColor = '#f3f3f3'), 500);
     containerApp.style.opacity = '0';
