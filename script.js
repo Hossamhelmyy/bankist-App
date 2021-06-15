@@ -120,11 +120,13 @@ const option = {
   month: 'short',
   year: 'numeric',
 };
-function getTime() {
+function getTime(acc) {
   const now = new Date();
-  labelDate.textContent = new Intl.DateTimeFormat('en-US', option).format(now);
+  labelDate.textContent = new Intl.DateTimeFormat(acc.locale, option).format(
+    now
+  );
 }
-setInterval(() => getTime(), 1000);
+setInterval(() => getTime(currentAccount), 1000);
 
 // const local = navigator.language;
 // const day = `${now.getDate()}`.padStart(2, 0);
